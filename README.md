@@ -41,32 +41,45 @@ The dataset used for this project is sourced from Kaggle, which contains custome
 5. **Results**: Summarize the findings and present the segments.
 
 ## Data Collection
-The dataset was collected from Kaggle and includes the following fields:
+The dataset was collected from Kaggle and includes the following columns:
+- `Transaction_ID`
+- `Date`
 - `Customer_Name`
-- `Num_Visits`
-- `Total_Spent`
-- `First_Purchase_Date`
-- `Last_Purchase_Date`
-- `Recency`
-- `Avg_Spend`
-- `Avg_Items`
-- `Discount_Usage`
-- `Preferred_Payment_Method`
+- `Product`
+- `Total_Items`
+- `Total_Cost`
+- `Payment_Method`
 - `City`
+- `Store_Type`
+- `Discount_Applied`
 - `Customer_Category`
-- `Cluster`
+- `Season`
+- `Promotion`
 
 ## Data Preparation
 Steps taken to prepare the data:
-- Extracted relevant features using SQL queries.
+- Extracted relevant features using SQL queries from the original Kaggle dataset.
+- Transformed and aggregated the data to create the following features:
+  - `Customer_Name`
+  - `Num_Visits`: Number of visits.
+  - `Total_Spent`: Total amount spent by the customer.
+  - `First_Purchase_Date`: Date of the first purchase.
+  - `Last_Purchase_Date`: Date of the last purchase.
+  - `Recency`: Days since the last purchase.
+  - `Avg_Spend`: Average amount spent per visit.
+  - `Avg_Items`: Average number of items purchased per visit.
+  - `Discount_Usage`: Frequency of discount usage.
+  - `Preferred_Payment_Method`: Most frequently used payment method.
+  - `City`: City of the customer.
+  - `Customer_Category`: Customer category.
 - Cleaned and preprocessed the data using Python (Pandas).
 - Scaled features for clustering.
 - Converted date fields to datetime format.
 
 ## Clustering Analysis
 - Used K-means clustering algorithm from Scikit-Learn.
-- Determined the optimal number of clusters using the elbow method.
-- Added a `Cluster` column to the dataset based on the clustering results.
+- Determined the optimal number of clusters using the elbow method which was found to be K=3.
+- Added a `Cluster` column to the dataset based on the clustering results using the labels 0,1,and 2.
 
 ## Visualization and Insights
 - Created various visualizations using Tableau to analyze customer segments:
@@ -108,4 +121,3 @@ You can run this project directly on GitHub by following these steps:
 
 ## Acknowledgments
 - Kaggle for providing the dataset.
-
