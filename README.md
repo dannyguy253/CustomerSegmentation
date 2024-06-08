@@ -1,5 +1,3 @@
-
-
 # Customer Segmentation Project
 
 ## Table of Contents
@@ -22,7 +20,7 @@
 This project aims to segment customers based on their purchasing behavior to identify distinct customer groups. Understanding these segments can help businesses tailor marketing strategies and improve customer satisfaction.
 
 ## Data Source
-The dataset used for this project is sourced from Kaggle, which contains customer transaction data.
+The dataset used for this project is sourced from Kaggle, which contains customer transaction data. You can access the dataset [here](https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset).
 
 ## Objectives
 - Segment customers based on purchasing behavior.
@@ -89,20 +87,19 @@ Steps taken to prepare the data:
 The customer segmentation analysis helped in understanding the different customer groups, their preferences, and behaviors. These insights can be leveraged to enhance customer engagement and optimize marketing efforts.
 
 ## How to Run the Project
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/customer-segmentation.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd customer-segmentation
-   ```
-3. Install the required dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-4. Run the Jupyter notebook for data preparation and clustering analysis.
-5. Load the prepared dataset into Tableau for visualization.
+You can run this project directly on GitHub by following these steps:
+
+1. **Clone the repository**:
+   - Click the "Code" button on the repository page and select "Open with GitHub Desktop" or copy the URL to clone it using your preferred method.
+
+2. **GitHub Codespaces**:
+   - If you have access to GitHub Codespaces, you can open this project in a codespace by clicking the "Code" button and selecting "Open with Codespaces".
+
+3. **Run Jupyter Notebooks**:
+   - Navigate to the `notebooks` directory (if available) and open the Jupyter notebooks using the GitHub interface or GitHub Actions to run the notebooks automatically.
+
+4. **Using GitHub Actions**:
+   - If the repository includes GitHub Actions workflows, they can automate parts of the process. You can trigger these workflows from the "Actions" tab on the repository page.
 
 ## Future Work
 - Integrate additional data sources for more comprehensive analysis.
@@ -111,3 +108,4 @@ The customer segmentation analysis helped in understanding the different custome
 
 ## Acknowledgments
 - Kaggle for providing the dataset.
+
