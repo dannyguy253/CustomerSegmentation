@@ -12,7 +12,9 @@
 - [Visualization and Insights](#visualization-and-insights)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [How to Run the Project](#how-to-run-the-project)
+-  <!--
+ [How to Run the Project](#how-to-run-the-project)
+-->
 - [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
@@ -76,10 +78,14 @@ Steps taken to prepare the data:
 - Scaled features for clustering.
 - Converted date fields to datetime format.
 
+Please refer to the SQL Script provided above for more details on how we extracted relevant features.
+
 ## Clustering Analysis
 - Used K-means clustering algorithm from Scikit-Learn.
 - Determined the optimal number of clusters using the elbow method which was found to be K=3.
 - Added a `Cluster` column to the dataset based on the clustering results using the labels 0,1, and 2.
+
+Please refer to the Jupyter Notebook for more information about the clustering analysis including a pairplot and centroids of each of the 3 clusters for more analysis.
 
 ## Visualization and Insights
 - Created various visualizations using Tableau to analyze customer segments:
@@ -90,6 +96,7 @@ Steps taken to prepare the data:
   - Average purchase value per cluster.
   - Purchase frequency per cluster.
   - Recency heatmap.
+ 
 [Link to Tableau Dashboard](https://public.tableau.com/app/profile/daniel.lam7659/viz/CustomerSegmentationDashboard_17173973617210/ClusterAnalysis)
 
 ## Results
