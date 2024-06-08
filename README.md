@@ -75,14 +75,14 @@ Steps taken to prepare the data:
 - Scaled features for clustering.
 - Converted date fields to datetime format.
 
-Please refer to the SQL Script provided above for more details on how we extracted relevant features.
+Please refer to the SQL script called "Customer_Segment_Query.sql" provided above for more details on how we extracted relevant features.
 
 ## Clustering Analysis
 - Used K-means clustering algorithm from Scikit-Learn.
-- Determined the optimal number of clusters using the elbow method which was found to be K=3.
-- Added a `Cluster` column to the dataset based on the clustering results using the labels 0,1, and 2.
+- Determined the optimal number of clusters using the elbow method, which was found to be K=3.
+- Added a `Cluster` column to the dataset based on the clustering results using the labels 0, 1, and 2.
 
-Please refer to the Jupyter Notebook for more information about the clustering analysis including a pairplot and centroids of each of the 3 clusters for more analysis.
+Please refer to the Jupyter Notebook with the file name "Customer Segmentation.ipynb" for more information about the clustering analysis, including a pairplot and centroids of each of the 3 clusters for further analysis.
 
 ## Visualization and Insights
 - Created various visualizations using Tableau to analyze customer segments:
@@ -92,17 +92,45 @@ Please refer to the Jupyter Notebook for more information about the clustering a
   - City distribution per cluster.
   - Average purchase value per cluster.
   - Purchase frequency per cluster.
-  - Recency heatmap.
- 
+
 [Link to Tableau Dashboard](https://public.tableau.com/app/profile/daniel.lam7659/viz/CustomerSegmentationDashboard_17173973617210/ClusterAnalysis)
 
 ## Results
-- Identified distinct customer segments based on purchasing behavior.
-- Highlighted key characteristics and behaviors of each segment.
-- Provided actionable insights for targeted marketing strategies.
 
-## Conclusion
-The customer segmentation analysis helped in understanding the different customer groups, their preferences, and behaviors. These insights can be leveraged to enhance customer engagement and optimize marketing efforts.
+### Overall Insights
+
+#### Cluster 0
+- **Visit Frequency**: Moderate
+- **Total Spend**: Moderate
+- **Average Spend per Visit**: Moderate
+- **Discount Usage**: Higher
+
+#### Cluster 1
+- **Visit Frequency**: Infrequent
+- **Total Spend**: Low
+- **Average Spend per Visit**: High
+- **Discount Usage**: Moderate
+
+#### Cluster 2
+- **Visit Frequency**: Infrequent
+- **Total Spend**: Low
+- **Average Spend per Visit**: Low
+- **Discount Usage**: Moderate
+
+Customers in Cluster 2 are infrequent visitors with the lowest total and average spending per visit. They purchase a similar number of items per visit and have low discount usage, similar to Cluster 1.
+
+### Key Characteristics and Behaviors of Each Segment
+- **Cluster 0**: Customers in this segment have a moderate visit frequency and spending pattern. They tend to use discounts more frequently, which suggests they are price-sensitive and respond well to promotions.
+- **Cluster 1**: These customers visit infrequently but spend a high amount per visit. They use discounts moderately, indicating they are likely to make significant purchases but are less price-sensitive compared to Cluster 0.
+- **Cluster 2**: Characterized by infrequent visits and low spending, both in total and per visit. Their moderate use of discounts suggests they are not highly motivated by promotional offers.
+
+### Actionable Insights for Targeted Marketing Strategies
+- **Cluster 0**: Implement targeted promotions and discount offers to maintain and potentially increase their visit frequency and spending. Personalized discounts and loyalty programs could be effective.
+- **Cluster 1**: Focus on strategies to increase visit frequency, such as exclusive events or early access to new products. Offering high-value items and premium services can cater to their high spending per visit.
+- **Cluster 2**: Develop strategies to boost engagement and encourage more frequent visits. This could include personalized communication, incentives for repeat visits, and introductory offers for new products or services.
+
+By leveraging these insights, businesses can tailor their marketing efforts to better meet the needs and preferences of each customer segment, ultimately enhancing customer engagement and satisfaction.
+
 <!-- 
 ## How to Run the Project
 You can run this project directly on GitHub by following these steps:
@@ -119,10 +147,30 @@ You can run this project directly on GitHub by following these steps:
 4. **Using GitHub Actions**:
    - If the repository includes GitHub Actions workflows, they can automate parts of the process. You can trigger these workflows from the "Actions" tab on the repository page.
 -->
+
+## Conclusion
+
+The customer segmentation analysis revealed distinct customer groups with unique purchasing behaviors and preferences. Key findings include:
+
+- **Cluster 0**: Customers with moderate visit frequency, moderate total and average spend, and higher discount usage.
+- **Cluster 1**: Infrequent visitors with high average spend per visit and moderate discount usage.
+- **Cluster 2**: Infrequent visitors with the lowest total and average spending per visit, and moderate discount usage.
+
+These insights can be leveraged to enhance customer engagement and optimize marketing efforts by tailoring strategies to each segment's characteristics. For instance, targeted promotions can be designed for Cluster 0 customers who are responsive to discounts, while strategies to increase visit frequency might be effective for Clusters 1 and 2.
+
+By understanding and addressing the needs of each customer segment, businesses can improve customer satisfaction, loyalty, and overall profitability.
+
+
 ## Future Work
-- Integrate additional data sources for more comprehensive analysis.
-- Explore other clustering algorithms and techniques.
-- Implement predictive modeling for customer behavior.
+- **Integrate Additional Data Sources**: Enhance the analysis by incorporating more data sources, such as demographic information, social media interactions, or customer feedback, to provide a more comprehensive view of customer behavior and preferences.
+- **Explore Other Clustering Algorithms and Techniques**: Investigate different clustering methods, such as hierarchical clustering, DBSCAN, or Gaussian Mixture Models, to compare their performance and potentially uncover more nuanced customer segments.
+- **Implement Predictive Modeling for Customer Behavior**: Develop predictive models to forecast future customer behavior, such as purchase likelihood, churn prediction, or lifetime value estimation, enabling proactive and targeted marketing strategies.
+- **Segment Validation and Profiling**: Conduct further validation of the clusters using techniques like silhouette analysis or gap statistics and create detailed profiles for each segment to better understand their characteristics.
+- **Real-Time Segmentation**: Implement real-time customer segmentation in a production environment, allowing businesses to dynamically adjust marketing strategies based on the latest customer data.
+- **Custom Marketing Strategies**: Design and test customized marketing strategies for each segment, measuring the impact on customer engagement and conversion rates to refine and optimize these strategies over time.
+
 
 ## Acknowledgments
-- Kaggle for providing the dataset.
+- **Kaggle**: For providing the dataset.
+- **Family and Friends**: For their encouragement and support.
+
