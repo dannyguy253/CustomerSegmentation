@@ -79,7 +79,7 @@ Steps taken to prepare the data:
 ## Clustering Analysis
 - Used K-means clustering algorithm from Scikit-Learn.
 - Determined the optimal number of clusters using the elbow method which was found to be K=3.
-- Added a `Cluster` column to the dataset based on the clustering results using the labels 0,1,and 2.
+- Added a `Cluster` column to the dataset based on the clustering results using the labels 0,1, and 2.
 
 ## Visualization and Insights
 - Created various visualizations using Tableau to analyze customer segments:
@@ -90,6 +90,7 @@ Steps taken to prepare the data:
   - Average purchase value per cluster.
   - Purchase frequency per cluster.
   - Recency heatmap.
+[Link to Tableau Dashboard](https://public.tableau.com/app/profile/daniel.lam7659/viz/CustomerSegmentationDashboard_17173973617210/ClusterAnalysis)
 
 ## Results
 - Identified distinct customer segments based on purchasing behavior.
@@ -98,7 +99,7 @@ Steps taken to prepare the data:
 
 ## Conclusion
 The customer segmentation analysis helped in understanding the different customer groups, their preferences, and behaviors. These insights can be leveraged to enhance customer engagement and optimize marketing efforts.
-
+<!-- 
 ## How to Run the Project
 You can run this project directly on GitHub by following these steps:
 
@@ -113,7 +114,7 @@ You can run this project directly on GitHub by following these steps:
 
 4. **Using GitHub Actions**:
    - If the repository includes GitHub Actions workflows, they can automate parts of the process. You can trigger these workflows from the "Actions" tab on the repository page.
-
+-->
 ## Future Work
 - Integrate additional data sources for more comprehensive analysis.
 - Explore other clustering algorithms and techniques.
