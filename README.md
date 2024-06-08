@@ -12,9 +12,6 @@
 - [Visualization and Insights](#visualization-and-insights)
 - [Results](#results)
 - [Conclusion](#conclusion)
--  <!--
- [How to Run the Project](#how-to-run-the-project)
--->
 - [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
