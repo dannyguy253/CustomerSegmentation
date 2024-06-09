@@ -1,5 +1,7 @@
 # Customer Segmentation Project
 
+![Customer Segmentation Banner](./Images/customer-segmentation-banner.jpg)
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
