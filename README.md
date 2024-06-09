@@ -78,14 +78,14 @@ Steps taken to prepare the data:
 - Converted date fields to datetime format.
 
 Please refer to the SQL script called "Customer_Segment_Query.sql" provided above for more details on how we extracted relevant features.
-Also, refer to the Jupyter Notebook with the file name "Customer Segmentation.ipynb" for the data cleaaning and preprocessing the data needed for the clustering algorithm called K-Means clustering algorithm.
+Also, refer to the Jupyter Notebook with the file name "Customer Segmentation.ipynb" for the data cleaning and preprocessing of the data needed for the clustering algorithm called the K-Means clustering algorithm.
  
 ## Clustering Analysis
 - Used K-means clustering algorithm from Scikit-Learn.
 - Determined the optimal number of clusters using the elbow method, which was found to be K=3.
 - Added a `Cluster` column to the dataset based on the clustering results using the labels 0, 1, and 2.
 
-Please refer to the Jupyter Notebook with the file name "Customer Segmentation.ipynb" for more information about the clustering analysis, including a pairplot and centroids of each of the 3 clusters for further analysis.
+Please refer to the Jupyter Notebook with the file name "Customer Segmentation.ipynb" for more information about the clustering analysis, including a pair plot and centroids of each of the 3 clusters for further analysis.
 
 ## Visualization and Insights
 - Created various visualizations using Tableau to analyze customer segments:
